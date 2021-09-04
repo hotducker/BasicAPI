@@ -2,19 +2,19 @@
     {
         "title":"คอมพิวเตอร์คืออะไร?",
         "subtitle":"คอมพิวเตอร์ คือ อุปกรณ์ที่ใช้สำหรับการคำนวณและทำงานอื่นๆ?",
-        "image_url":"https://cdn.pixabay.com/photo/2016/11/29/06/18/home-office-1867761_960_720.jpg",
+        "image_url":"https://raw.githubusercontent.com/hotducker/BasicAPI/main/computer.jpg",
         "detail":"คอมพิวเตอร์ คือ อุปกรณ์ทางอิเล็กทรอนิกส์ (electrinic device) ที่มนุษย์ใช้เป็นเครื่องมือช่วยในการจัดการกับข้อมูลที่อาจเป็นได้ ทั้งตัวเลข ตัวอักษร หรือสัญลักษณ์ที่ใช้แทนความหมายในสิ่งต่าง ๆ โดยคุณสมบัติที่สำคัญของคอมพิวเตอร์คือการที่สามารถกำหนดชุดคำสั่งล่วงหน้าหรือโปรแกรมได้ (programmable) นั่นคือคอมพิวเตอร์สามารถทำงานได้หลากหลายรูปแบบ ขึ้นอยู่กับชุดคำสั่งที่เลือกมาใช้งาน ทำให้สามารถนำคอมพิวเตอร์ไปประยุกต์ใช้งานได้อย่างกว้างขวาง เช่น ใช้ในการตรวจคลื่นความถี่ของหัวใจ การฝาก - ถอนเงินในธนาคาร การตรวจสอบสภาพเครื่องยนต์ เป็นต้น ข้อดีของคอมพิวเตอร์ คือ เครื่องคอมพิวเตอร์สามารถทำงานได้อย่างมีประสิทธภาพ มีความถูกต้อง และมีความรวดเร็ว"
     },
     {
         "title":"Flutter คือ?",
         "subtitle":"Tools สำหรับออกแบบ UI ของ Google",
-        "image_url":"https://cdn.pixabay.com/photo/2014/03/22/22/17/phone-292994_960_720.jpg",
+        "image_url":"https://raw.githubusercontent.com/hotducker/BasicAPI/main/programing.jpg",
         "detail":"Flutter คือ Framework ที่ใช้สร้าง UI สำหรับ mobile application ที่สามารถทำงานข้ามแพลตฟอร์มได้ทั้ง iOS และ Android ในเวลาเดียวกัน โดยภาษาที่ใช้ใน Flutter นั้นจะเป็นภาษา dart ซึ่งถูกพัฒนาโดย Google และที่สำคัญคือเป็น open source ที่สามารถใช้งานได้แบบฟรี ๆ อีกด้วย"
     },
     {
         "title":"Dart คือ?",
         "subtitle":"Tools สำหรับออกแบบ UI ของ Google",
-        "image_url":"https://cdn.pixabay.com/photo/2014/03/22/22/17/phone-292994_960_720.jpg",
+        "image_url":"https://raw.githubusercontent.com/hotducker/BasicAPI/main/flutter.jpg",
         "detail":"Flutter คือ Framework ที่ใช้สร้าง UI สำหรับ mobile application ที่สามารถทำงานข้ามแพลตฟอร์มได้ทั้ง iOS และ Android ในเวลาเดียวกัน โดยภาษาที่ใช้ใน Flutter นั้นจะเป็นภาษา dart ซึ่งถูกพัฒนาโดย Google และที่สำคัญคือเป็น open source ที่สามารถใช้งานได้แบบฟรี ๆ อีกด้วย"
     },
     {
