@@ -20,7 +20,7 @@
     {
         "title":"Firebase คือ?",
         "subtitle":"เป็น Database NonSQL ของ Google",
-        "image_url":"https://cdn.pixabay.com/photo/2014/03/22/22/17/phone-292994_960_720.jpg",
-        "detail":"Flutter คือ Framework ที่ใช้สร้าง UI สำหรับ mobile application ที่สามารถทำงานข้ามแพลตฟอร์มได้ทั้ง iOS และ Android ในเวลาเดียวกัน โดยภาษาที่ใช้ใน Flutter นั้นจะเป็นภาษา dart ซึ่งถูกพัฒนาโดย Google และที่สำคัญคือเป็น open source ที่สามารถใช้งานได้แบบฟรี ๆ อีกด้วย"
+        "image_url":"https://raw.githubusercontent.com/hotducker/BasicAPI/main/computer.jpg",
+        "detail":"Firebase คือ ยืม รูป computer มาใช้ก่อน ที่ใช้สร้าง UI สำหรับ mobile application ที่สามารถทำงานข้ามแพลตฟอร์มได้ทั้ง iOS และ Android ในเวลาเดียวกัน โดยภาษาที่ใช้ใน Flutter นั้นจะเป็นภาษา dart ซึ่งถูกพัฒนาโดย Google และที่สำคัญคือเป็น open source ที่สามารถใช้งานได้แบบฟรี ๆ อีกด้วย"
     }
 ]
