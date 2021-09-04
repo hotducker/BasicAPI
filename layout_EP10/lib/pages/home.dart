@@ -2,6 +2,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:layout/pages/detail.dart';
 
+import 'package:http/http.dart' as http;  //as http คือ เมื่อต้องการใช้ package นี้ สามารถเรียกใช้โดย http ได้เลย
+import 'dart:async';
+
 class HomePage extends StatefulWidget {
   // const HomePage({ Key? key }) : super(key: key);
 
@@ -18,17 +21,17 @@ class _HomePageState extends State<HomePage> {
         ),
         body: Padding(
           padding: EdgeInsets.all(20),
-          child: FutureBuilder( builder:(context, snapshot) {     // snapshot เป็นข้อมูลใน [...] ที่อยู่ใน assets/data.json จะถูกดึงมาทั้งหมดด่วย function : FutureBuilder
-              var data = json.decode(snapshot.data.toString());   // snapshot.data.toString() จะทำการ converse ข้อมูลใน snapshot มาเป็น String เพื่อเอาไปเก็บในตัวแปร data ซึ่งมันจะเป็นรูปแบบ List แล้ว
+          child: FutureBuilder( builder:(context, AsyncSnapshot snapshot) {     // snapshot เป็นข้อมูลใน [...] ที่อยู่ใน assets/data.json จะถูกดึงมาทั้งหมดด่วย function : FutureBuilder
+              //var data = json.decode(snapshot.data.toString());   // snapshot.data.toString() จะทำการ converse ข้อมูลใน snapshot มาเป็น String เพื่อเอาไปเก็บในตัวแปร data ซึ่งมันจะเป็นรูปแบบ List แล้ว
               return ListView.builder(                  // เป็นการแบ่งข้อมูลออกเป็น list
                 itemBuilder: (BuildContext context, int index){
-                  return MyBox(data[index]['title'], data[index]['subtitle'], data[index]['image_url'], data[index]['detail']);
+                  return MyBox(snapshot.data[index]['title'], snapshot.data[index]['subtitle'], snapshot.data[index]['image_url'], snapshot.data[index]['detail']);
                 },
-                itemCount: data.length, );
+                itemCount: snapshot.data.length, );
 
           },
-          future: DefaultAssetBundle.of(context).loadString('assets/data.json'),  // future: จะไปดึงข้อมูลทั้งก้อนที่อยู่ใน assets/data.json ออกมาเป็น snapshort ซึ่งทั้งหมดอยู่ภายใต้ Function FutureBuilder สังเกตุได้จาก ปีกกาชมพู บรรทัด 21
-
+          //future: DefaultAssetBundle.of(context).loadString('assets/data.json'),  // future: จะไปดึงข้อมูลทั้งก้อนที่อยู่ใน assets/data.json ออกมาเป็น snapshort ซึ่งทั้งหมดอยู่ภายใต้ Function FutureBuilder สังเกตุได้จาก ปีกกาชมพู บรรทัด 21
+          future: getData(),
 
           )
         ));
@@ -78,4 +81,14 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
+
+  Future getData() async {
+    // https://raw.githubusercontent.com/hotducker/BasicAPI/main/data.json
+    var url = Uri.https( 'raw.githubusercontent.com','/hotducker/BasicAPI/main/data.json');
+    var response = await http.get(url);
+    var result = json.decode(response.body);
+    return result;
+  }
+
 }
